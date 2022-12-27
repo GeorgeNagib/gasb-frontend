@@ -18,16 +18,19 @@ const EmailInput = () => {
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      <Form className="flex">
-        <div>
+      <Form className="flex flex-wrap ">
+        <div
+          className="lg:basis-[69%] basis-full 
+        "
+        >
           <Field
             type="email"
             name="email"
-            className="text-white outline-0 border-2 bg-transparent placeholder:uppercase placeholder:text-white py-4 px-6"
-            placeholder="you email to notify you on launch"
+            className="text-white md:text-base text-sm w-full  outline-0 border-2 bg-transparent placeholder:uppercase placeholder:text-white py-4 px-6"
+            placeholder="your email to notify you on launch"
           />
         </div>
-        <button className="bg-white text-[rgba(13, 16, 57, 1)] p-4 font-bold uppercase">
+        <button className="bg-white text-[rgba(13, 16, 57, 1)] p-4 md:text-base text-sm font-bold uppercase w-full lg:w-auto ">
           Notify Me
         </button>
       </Form>

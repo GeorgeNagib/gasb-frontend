@@ -17,29 +17,24 @@ export default function Home() {
       />
     );
   };
+
   return (
     <>
       <Head>
         <title>Coming Soon</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className={styles.main}>
-        <div className="main-container flex items-center justify-between flex-wrap gap-8">
-          <div className="mb-10">
+        <div className="main-container flex items-center justify-between flex-col lg:flex-row gap-8">
+          <div className="mb-10 flex-1">
             <div className="pb-[42px] border-b-2 w-fit mb-[42px]">
-              <h1 className="text-white text-[68px] leading-tight mb-[42px]">
+              <h1 className="text-white text-[40px] md:text-[55px] xl:[70px] leading-tight mb-[42px]">
                 <span className="font-bold">Coming soon</span> <br /> We are
                 building
                 <br /> something amazing.
               </h1>
-              <Countdown date={Date.now() + 800000000} renderer={renderer} />
+              <Countdown date={1673122256000} renderer={renderer} />
             </div>
-            <div className="flex gap-[76px]">
+            <div className="flex md:gap-[76px] flex-wrap gap-[20px] ">
               <div className="flex text-white text-xl gap-4 items-center">
                 <span>
                   <svg
@@ -74,14 +69,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="h-[238px] w-[2px]   bg-white">&nbsp;</div>
-          <div>
+          <div className="h-[238px] w-[2px] bg-white lg:block hidden">
+            &nbsp;
+          </div>
+          <div className="flex-1">
             <EmailInput />
           </div>
         </div>
-        <footer className="mt-[154px]">
+        <footer className="md:mt-[20px] mt-[30px]">
           <div className="main-container">
-            <div className="flex justify-between">
+            <div className="flex justify-between flex-wrap">
               <Image
                 src="/../public/photo1672122455-removebg 1.png"
                 width={100}

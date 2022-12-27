@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: url('../asset/photo1672124296\ 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .main-container {
   max-width: 90%;
   margin: auto;
