@@ -24,18 +24,18 @@ export default function Home() {
         <title>Coming Soon</title>
       </Head>
       <div className={styles.main}>
-        <div className="main-container flex items-center justify-between flex-col lg:flex-row gap-8">
-          <div className="mb-10 flex-1">
-            <div className="pb-[42px] border-b-2 w-fit mb-[42px]">
-              <h1 className="text-white text-[40px] md:text-[55px] xl:[70px] leading-tight mb-[42px]">
+        <div className="main-container lg:text-left text-center !mb-10 flex items-center justify-between flex-col lg:flex-row gap-10">
+          <div className="w-full">
+            <div className="pb-[32px] border-b-2 w-auto mb-[42px]">
+              <h1 className="text-white text-[40px] font-light md:text-[55px] xl:[70px] leading-tight mb-[42px]">
                 <span className="font-bold">Coming soon</span> <br /> We are
                 building
                 <br /> something amazing.
               </h1>
               <Countdown date={1673122256000} renderer={renderer} />
             </div>
-            <div className="flex md:gap-[76px] flex-wrap gap-[20px] ">
-              <div className="flex text-white text-xl gap-4 items-center">
+            <div className="flex md:gap-[76px] pb-[32px] lg:pb-0 flex-wrap md:flex-nowrap gap-[20px] border-b-2 lg:border-0 justify-center lg:justify-start">
+              <div className="flex  text-white text-xl gap-4 items-center">
                 <span>
                   <svg
                     width="25"
@@ -52,7 +52,7 @@ export default function Home() {
                 </span>
                 +20120145454
               </div>
-              <div className="flex text-white text-xl gap-4 items-center">
+              <div className="flex  text-white text-xl gap-4 items-center ">
                 <svg
                   width="25"
                   height="21"
@@ -65,20 +65,20 @@ export default function Home() {
                     fill="#E1E1E8"
                   />
                 </svg>
-                info@venturehd.com
+                <a href="#">info@venturehd.com</a>
               </div>
             </div>
           </div>
           <div className="h-[238px] w-[2px] bg-white lg:block hidden">
             &nbsp;
           </div>
-          <div className="flex-1">
+          <div className={`w-full ${styles.form}`}>
             <EmailInput />
           </div>
         </div>
-        <footer className="md:mt-[20px] mt-[30px]">
+        <footer>
           <div className="main-container">
-            <div className="flex justify-between flex-wrap">
+            <div className="flex justify-between  flex-wrap">
               <Image
                 src="/../public/photo1672122455-removebg 1.png"
                 width={100}

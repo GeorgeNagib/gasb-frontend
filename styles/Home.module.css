@@ -3,3 +3,40 @@
 
   font-family: 'Inter', sans-serif;
 }
+
+@media (min-width: 1400px) and (max-width: 2600px) {
+  .main {
+    margin-top: 23vh;
+  }
+}
+
+@media (max-width: 1090px) {
+  .formControl {
+    flex-basis: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 408px) {
+  .form {
+    width: 100%;
+  }
+}
+
+/* @media (min-width: 500px) and (max-width: 767px) {
+  .form {
+    width: 28rem;
+  }
+} */
+/* @media (min-width: 767px) and (max-width: 1024px) {
+  .form {
+    width: 31rem;
+  }
+} */
