@@ -19,7 +19,7 @@ const EmailInput = () => {
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      <Form className="flex flex-wrap ">
+      <Form className="flex flex-wrap justify-end">
         <div className={`lg:basis-[69%] basis-full ${styles.formControl}`}>
           <Field
             type="email"

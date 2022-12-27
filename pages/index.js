@@ -80,16 +80,16 @@ export default function Home() {
           <div className="main-container">
             <div className="flex justify-between  flex-wrap">
               <Image
-                src="/../public/photo1672122455-removebg 1.png"
+                src="/gasb.png"
                 width={100}
                 height={100}
-                alt="logo"
+                alt="GASB logo"
               />
               <Image
-                src="/../public/photo1672122455-removebg 1.png"
-                width={100}
+                src="/venture.png"
+                width={150}
                 height={100}
-                alt="logo"
+                alt="Venture logo"
               />
             </div>
           </div>
