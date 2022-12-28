@@ -50,7 +50,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                +20120145454
+                +20 12 2214 8012
               </div>
               <div className="flex  text-white text-xl gap-4 items-center ">
                 <svg
@@ -65,7 +65,7 @@ export default function Home() {
                     fill="#E1E1E8"
                   />
                 </svg>
-                <a href="#">info@venturehd.com</a>
+                <a href="mailto:info@venturehd.com">info@venturehd.com</a>
               </div>
             </div>
           </div>
